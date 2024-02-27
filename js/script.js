@@ -42,11 +42,22 @@ function displayCard(phones) {
     `;
     cardContainer.appendChild(div);
   });
+  spinnerLoad(false);
 }
 
 function searchBtn() {
+  spinnerLoad(true);
   let inputField = document.getElementById("input-field");
   let inputValue = inputField.value;
   inputField.value = "";
   loadPhone(inputValue);
 }
+
+let spinnerLoad = (isLoading) => {
+  let loader = document.getElementById("loader");
+  if (isLoading) {
+    loader.classList.remove("hidden");
+  } else {
+    loader.classList.add("hidden");
+  }
+};
