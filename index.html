@@ -80,25 +80,37 @@
       </div>
     </header>
 
+    <!-- Search field -->
+    <div class="text-center py-7">
+      <h2 class="font-semibold text-3xl py-6">Search your phone</h2>
+      <div class="join">
+        <input
+          id="input-field"
+          class="input input-bordered join-item"
+          placeholder="Search...."
+        />
+        <button
+          onclick="searchBtn()"
+          class="btn join-item bg-blue-500 text-white hover:bg-blue-400"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- loader -->
+    <div id="loader" class="text-center py-5 hidden">
+      <span class="loading text-blue-500 loading-dots loading-lg"></span>
+    </div>
+
     <!-- cards section -->
-    <div id="card-container" class="max-w-7xl mx-auto grid grid-cols-3 gap-6">
-      <!-- <div class="card w-96 bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div class="card-body text-center">
-          <h2 class="font-semibold text-xl text-center">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions w-full">
-            <button class="btn w-full bg-blue-500 text-white hover:bg-blue-400">
-              Show Details
-            </button>
-          </div>
-        </div>
-      </div> -->
+    <div
+      id="card-container"
+      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6"
+    ></div>
+
+    <div id="show-all-btn" class="text-center my-5 hidden">
+      <button class="btn bg-blue-500 text-white">Show All</button>
     </div>
     <!-- script -->
     <script src="js/script.js"></script>
