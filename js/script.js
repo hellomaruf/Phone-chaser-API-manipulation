@@ -16,7 +16,7 @@ function displayCard(phones) {
   } else {
     showAllBtn.classList.add("hidden");
   }
-  // show only ten cards when search btn clicked***********
+  // show only 12 cards when search btn clicked***********
   phones = phones.slice(0, 12);
   phones.forEach((element) => {
     console.log(element);
