@@ -21,13 +21,64 @@
     />
     <!-- custom font -->
     <style>
-        .font-poppins{
-            font-family: "Poppins", sans-serif;
-        }
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
     </style>
   </head>
   <body class="font-poppins">
-    
+    <!-- nav bar -->
+    <nav class="bg-base-200 py-4">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+          <a class="font-bold text-2xl">Hot Gadgets</a>
+        </div>
+        <div class="navbar-center hidden lg:flex"></div>
+        <div class="navbar-end">
+          <a class="btn bg-blue-500 text-white hover:bg-blue-400">Sign up</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <header>
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex flex-col py-32 text-center">
+          <div class="max-w-6xl">
+            <h1 class="text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi. There are many variations of passages of Lorem Ipsum
+              available, but the majority have suffered alteration in some form,
+              by injected humou.
+            </p>
+            <button class="btn bg-blue-500 text-white hover:bg-blue-400">
+              Buy Now
+            </button>
+          </div>
+          <img src="assets/nav-photo.png" alt="" srcset="" />
+        </div>
+      </div>
+    </header>
     <!-- script -->
     <script src="js/script.js"></script>
   </body>
