@@ -84,6 +84,26 @@
       </div>
     </div>
 
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div
+          id="modal-img-title"
+          class="flex flex-col items-center justify-center"
+        ></div>
+        <div id="phone-specification" class="pt-5"></div>
+        <div class="modal-action text-center">
+          <form class="" method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn text-white bg-red-500 hover:bg-red-400">
+              Close
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
     <!-- loader -->
     <div id="loader" class="text-center py-5 hidden">
       <span class="loading text-blue-500 loading-dots loading-lg"></span>
